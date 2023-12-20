@@ -1,0 +1,33 @@
+void main() {
+  Getname student = Getname.init(40,'효웅');
+  Getname teacher = Getname.init('이솔',5);
+  student.getName();
+  teacher.getName();
+  
+  print(student.name);
+  print(teacher.age);
+}
+
+class Getname {
+  dynamic name;
+  dynamic age;
+  
+  Getname.init(
+   dynamic name,
+   dynamic age, 
+  ) :
+     this.name = name,
+      this.age = age;
+  
+  
+  getName(){
+    print('제 이름은 ${this.name}이며 나이는 ${this.age}입니다');
+  }
+  //getName(String name){
+   //return this.name = name;
+ // }
+  
+  //getAge(int age){
+   //return this.age = age;
+ // }
+  
